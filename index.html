@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fruit Burst</title>
+   <!--cdn -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- google font Lato and logo -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+      <!-- font awesome icon -->
+      <script src="https://kit.fontawesome.com/ef65621fa8.js" crossorigin="anonymous"></script>
+
+   <!-- custom styles -->
+   <style>
+      .font-lato {
+         font-family: 'Lato', sans-serif;
+      }
+
+      .material-symbols-outlined {
+         font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+      }
+   </style>
+
+
+</head>
+
+<body class="font-lato">
+   <header class="md:container md:mx-auto">
+      <nav class="my-24">
+         <div class="navbar bg-[#F85559] rounded-full lg:flex-grow">
+            <div class=" navbar-start hidden lg:flex">
+               <ul class="menu menu-horizontal px-1 font-medium text-white">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+               </ul>
+            </div>
+            <div class=" flex-1">
+               <div class="dropdown">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M4 6h16M4 12h8m-8 6h16" />
+                     </svg>
+                  </label>
+                  <ul tabindex="0"
+                     class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-base bg-base-100 rounded-box w-52 font-medium text-white">
+                     <li><a>Home</a></li>
+                     <li><a>Shop</a></li>
+                     <li><a>News</a></li>
+                     <li><a>Contact</a></li>
+                  </ul>
+               </div>
+               <div class="navbar-center flex w-auto">
+                  <img src="images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case text-3xl text-white">Fruit Burst</a>
+               </div>
+
+            </div>
+
+            <div class="navbar-end lg\:btm-nav-sm">
+
+               <div class="justify-between">
+                  <a class="btn bg-white font-normal text-sm rounded-full border-none ">Search here
+                     <span class="material-symbols-outlined ">
+                        search
+                     </span>
+
+                  </a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- slider section -->
+      <section class="my-24">
+         <!-- slider 1 -->
+         <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+               <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                     <div class="max-w-md">
+                        <h1 class="text-2xl lg:text-5xl font-extrabold text-white">Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mb-5">We supply highly quality organic products </p>
+                        <button>
+                           <a class="btn bg-[#F85559] text-lg font-extrabold border-none text-white">Shop Now</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a>
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+            <!-- slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+               <div class="hero min-h-screen" style="background-image: url(images/banner2.png);">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                     <div class="max-w-md">
+                        <h1 class="text-2xl lg:text-5xl font-extrabold text-white">Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mb-5">We supply highly quality organic products </p>
+                        <button>
+                           <a class="btn bg-[#F85559] text-lg font-extrabold border-none text-white">Shop Now</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a>
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+            <!-- slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+               <div class="hero min-h-screen" style="background-image: url(images/banner3.png);">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                     <div class="max-w-md">
+                        <h1 class="text-2xl lg:text-5xl font-extrabold text-white">Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mb-5">We supply highly quality organic products </p>
+                        <button>
+                           <a class="btn bg-[#F85559] text-lg font-extrabold border-none text-white">Shop Now</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a>
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+            <!-- slider 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+               <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                  <div class="hero-content text-center text-neutral-content">
+                     <div class="max-w-md">
+                        <h1 class="text-2xl lg:text-5xl font-extrabold text-white">Exotic tastes at your doorstep
+                        </h1>
+                        <p class="mb-5">We supply highly quality organic products </p>
+                        <button>
+                           <a class="btn bg-[#F85559] text-lg font-extrabold border-none text-white">Shop Now</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a>
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+         </div>
+      </section>
+   </header>
+
+   <main class="md:container md:mx-auto">
+
+      <!-- Deal of the day -->
+
+      <section class="my-24 p-5 bg-white">
+
+         <!-- comedown clock section-->
+         <section class="grid items-center md:grid-cols-2 lg:grid-cols-2 mb-4 ">
+            <div class="text-start">
+               <h1 class="font-extrabold text-black text-3xl">Deal of the day</h1>
+               <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                  literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="m-auto text-black font-extrabold">
+               <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                  <div class="flex flex-col">
+                     <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                     </span>
+                     days
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                     </span>
+                     hours
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                     </span>
+                     min
+                  </div>
+                  <div class="flex flex-col">
+                     <span class="countdown font-mono text-5xl">
+                        <span style="--value:12;"></span>
+                     </span>
+                     sec
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- 4 Fruit section -->
+         <section class="grid  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:place-items-center">
+
+            <!-- first review apple -->
+            <div class="grid card bg-white  w-[18rem] h-[25rem] border border-[##121212]">
+               <figure>
+                  <img class="w-25 " src="/images/fruit6.png" alt="Shoes" />
+               </figure>
+               <h1 class="mx-auto p-8 border-b-2 text-[#121212] font-extrabold text-2xl border-b-[#121212]">12.90$ -
+                  18.85$</h1>
+               <p class="m-auto font-medium pt-2 text-[rgba(18, 18, 18, 0.60)]">Apples</p>
+               <div class="card-body">
+                  <div class="rating justify-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                        <path
+                           d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                           fill="#FBC0A8" />
+                     </svg>
+                  </div>
+
+                  <div class="text-center space-y-4 mt-4">
+                     <h4 class="text-sm font-semibold text-[#F85559] text-info">Details</h4>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- second review -->
+            <div class="grid card bg-white  w-[18rem] h-[25rem] border border-[##121212]">
+               <figure>
+                  <img class="w-25 " src="/images/fruit7.png" alt="Shoes" />
+               </figure>
+               <h1 class="mx-auto p-8 border-b-2 text-[#121212] font-extrabold text-2xl border-b-[#121212]">12.90$ -
+                  18.85$</h1>
+               <p class="m-auto font-medium pt-2 text-[rgba(18, 18, 18, 0.60)]">Orange</p>
+               <div class="card-body">
+                  <div class="rating justify-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                        <path
+                           d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                           fill="#FBC0A8" />
+                     </svg>
+                  </div>
+
+                  <div class="text-center space-y-4 mt-4">
+                     <h4 class="text-sm font-semibold text-[#F85559] text-info">Details</h4>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- third review -->
+            <div class="grid card bg-white  w-[18rem] h-[25rem] border border-[##121212]">
+               <figure>
+                  <img class="w-25 " src="/images/fruit8.png" alt="Shoes" />
+               </figure>
+               <h1 class="mx-auto p-8 border-b-2 text-[#121212] font-extrabold text-2xl border-b-[#121212]">12.90$ -
+                  18.85$</h1>
+               <p class="m-auto font-medium pt-2 text-[rgba(18, 18, 18, 0.60)]">Red Dragon</p>
+               <div class="card-body">
+                  <div class="rating justify-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                        <path
+                           d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                           fill="#FBC0A8" />
+                     </svg>
+                  </div>
+
+                  <div class="text-center space-y-4 mt-4">
+                     <h4 class="text-sm font-semibold text-[#F85559] text-info">Details</h4>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- forth review -->
+            <div class="grid card bg-white  w-[18rem] h-[25rem] border border-[##121212]">
+               <figure>
+                  <img class="w-25 " src="/images/fruit9.png" alt="Shoes" />
+               </figure>
+               <h1 class="mx-auto p-8 border-b-2 text-[#121212] font-extrabold text-2xl border-b-[#121212]">12.90$ -
+                  18.85$</h1>
+               <p class="m-auto font-medium pt-2 text-[rgba(18, 18, 18, 0.60)]">Banana</p>
+               <div class="card-body">
+                  <div class="rating justify-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                        <path
+                           d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                           fill="#F85559" />
+                        <path
+                           d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                           fill="#FBC0A8" />
+                        <path
+                           d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                           fill="#FBC0A8" />
+                     </svg>
+                  </div>
+
+                  <div class="text-center space-y-4 mt-4">
+                     <h4 class="text-sm font-semibold text-[#F85559] text-info">Details</h4>
+
+                  </div>
+               </div>
+            </div>
+
+         </section>
+
+
+
+
+         <button class="grid mx-auto mt-8 mb-5 ">
+            <a class="btn bg-[#F85559] text-sm font-normal border-none text-white">Shop All</a>
+         </button>
+      </section>
+
+      <section class=" my-24">
+         <!-- meet the team section -->
+         <div class="grid grid-flow-col md:grid-cols-1 my-auto">
+            <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+               <div class="hero-overlay bg-opacity-60">
+                  <div class="hero-content text-center text-neutral-content">
+                     <div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- members Photos -->
+               <div class="justify-center text-center ">
+               <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                  <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece
+                     of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+               </div>
+               <div class="grid gap-10 grid-col md:grid-cols-1 lg:grid-cols-4">
+                  <div class="text-center  ">
+                     <img class="m-auto" src="images/member1.png" alt="">
+                     <h1 class="font-bold text-white text-2xl">Awlad Hossain</h1>
+                     <p class="font-medium text-white text-sm">Fruits Expert</p>
+                     <span>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                     </span>
+                  </div>
+                  <div class="text-center ">
+                     <img class="m-auto	" src="images/member2.png" alt="">
+                     <h1 class="font-bold text-white text-2xl">Safia Chowdhury</h1>
+                     <p class="font-medium text-white text-sm">Fruits Expert</p>
+                     <span>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                     </span>
+                  </div>
+                  <div class="text-center ">
+                     <img class="m-auto	" src="images/member3.png" alt="">
+                     <h1 class="font-bold text-white text-2xl">Rokib Hossain</h1>
+                     <p class="font-medium text-white text-sm">Fruits Expert</p>
+                     <span>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                     </span>
+                  </div>
+                  <div class="text-center ">
+                     <img class="m-auto	" src="images/member4.png" alt="">
+                     <h1 class="font-bold text-white text-2xl">Chaity</h1>
+                     <p class="font-medium text-white text-sm">Fruits Expert</p>
+                     <span>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                     </span>
+                  </div>
+
+                  </div>
+</div>
+      </section>
+
+
+
+
+
+
+   </main>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
